@@ -1,0 +1,652 @@
+@import "encodeSans/stylesheet.css";
+@import "helvetica/MyFontsWebfontsKit.css";
+
+@import "shawnsStyles.less";
+@import "dansStyles.less";
+@import "existingDevStyles.less";
+
+/****************************************************/
+/*Style Guide Specific*/
+
+.non-style-guide{
+	font-family: 'HelveticaNeueLTStd-Bd';
+	color:black;
+	width:100%;
+	border-bottom:1px solid black;
+	padding-bottom:4px;
+	margin-bottom:10px;
+	margin-top:50px;
+	margin-bottom:50px;
+	hr{color:black;}
+}
+
+
+.encodeSansSemibold-Demo{
+	font-size:30px;
+	 font-family: 'encode_sanssemibold';
+}
+
+.encodeSansRegular-Demo{
+	font-size:30px;
+	font-family: 'encode_sansregular';
+}
+
+.encodeSansLight-Demo{
+	font-size:30px;
+	font-family: 'encode_sanslight';
+}
+
+.encodeSansExtraLight-Demo{
+	font-size:30px;
+	font-family: 'encode_sansextralight';
+}
+
+hr{
+	margin-top:20px;
+	margin-bottom:20px
+}
+
+code{
+	display:block;
+}
+
+.bootstrapColDemo{
+	height:500px;
+	width:100%;
+	background: #6f5499;
+}
+
+
+
+
+/****************************************************/
+/*Color Palette*/
+
+
+.colorPaletteSquare{
+	width:100%;
+	height:80px;
+	display:block;
+
+	/*Primary Palette*/
+	&.black{background:black;}
+
+	&.dark2{background:#0076BD;}
+	&.blue2{background:#00345E;}
+	&.highlight1{background:#009FDB;}
+	&.highlight2{background: #4CC8F2;}
+	&.highlight3{background: #CCECFB;}
+
+	&.grey1{background: #39474F;}
+	&.grey2{background: #808E97;}
+	&.grey3{background: #B9C3CA;}
+	&.grey4{background: #DDE4E8;}
+
+
+	&.accentGreen1{background: #7EC252;}
+	&.accentGreen2{background: #A4CE57;}
+	&.accentGreen3{background: #CFE4AD;}
+
+	&.white{background: white; border: 1px solid grey;}
+
+	/*Accent Palette*/
+	&.green{background:#2ea200;}
+	&.red{background:#e11717;}
+
+
+	&.blackBlueGradient{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,0076bd+100 */
+		background: #000000; /* Old browsers */
+		background: -moz-linear-gradient(top,  #000000 0%, #0076bd 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #000000 0%,#0076bd 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #000000 0%,#0076bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0076bd',GradientType=0 ); /* IE6-9 */
+
+	}
+}
+
+
+
+
+
+/****************************************************/
+/*Text*/
+
+
+
+h1{
+	font-family: 'encode_sansregular';
+}
+
+h2{
+	font-family: 'encode_sansregular';
+	font-size:36px;
+	line-height: 46px;
+	color:#009FDB
+
+;
+	padding-top:50px;
+	padding-bottom: 75px;
+}
+
+h3{
+	font-family: 'encode_sanslight';
+	font-size: 28px;
+	line-height: 36px;
+	color:#454545;
+	padding-top: 25px;
+	padding-bottom:25px;
+}
+
+h4{
+	font-family: 'encode_sanssemibold';
+	font-size: 24px;
+	line-height: 28px;
+	color:#585858;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+h5{
+	font-family: 'encode_sansregular';
+	font-size:20px;
+	line-height: 28px;
+	color:black;
+}
+
+
+p{
+	font-family: 'encode_sansregular';
+	font-size:18px;
+	line-height: 32px;
+	word-wrap:break-word;
+	padding-top:25px;
+	padding-bottom:25px;
+	color:black;
+
+	a{
+		color:black;
+	}
+/*
+	a:link{
+		color:black;
+		border-bottom: 4px solid #ade5ff;
+	}
+	a:visited{
+		color:black;
+		border-bottom: 4px solid #206fdb;
+	}
+	
+	a:hover{
+		background-color:#ade5ff;
+		text-decoration: none;
+	}
+	a:active{
+		color:black;
+		border-bottom: 4px solid #ade5ff;	
+	}
+*/
+}
+
+
+/****************************************************/
+/*Inline ELements */
+
+blockquote{
+	font-family: 'encode_sanssemibold';
+	font-size:18px;
+	color:#696969;
+	border-left:4px solid #2269f9;
+	margin-top:50px;
+	margin-bottom:25px;
+}
+
+
+strong{
+	font-family: 'encode_sanssemibold';
+	font-size:18px;
+}
+
+
+cite{
+	font-size:14px;
+	font-family: 'encode_sanssemibold';
+	color:grey;
+	font-style:normal;
+	text-transform:uppercase;
+}
+
+.formHeader{
+	font-size:14px;
+	font-family: 'encode_sansregular';
+	color:grey;
+	font-style:normal;
+	text-transform:uppercase;
+}
+
+mark{
+	background-color:#e8e8e8;
+}
+
+textarea{
+	font-family: 'encode_sanslight';
+	text-transform: uppercase;
+	font-size:13px;
+
+}
+
+
+/****************************************************/
+/*Ordered  / Unordered Lists*/
+
+ol, ul{
+	font-family: 'encode_sansregular';
+	font-size:18px;
+	line-height: 32px;
+	word-wrap:break-word;
+	padding-top:25px;
+	padding-bottom:25px;
+	color:black;
+
+	li{
+		padding-top:10px;
+		line-height: 26px;
+		color:black;
+
+		ul{
+			padding-top: 2px;
+			padding-bottom: 2px;
+
+			li{
+				line-height: 26px;
+				color:black;
+			}
+		}
+
+		ol{
+			padding-top: 2px;
+			padding-bottom: 2px;
+
+			li{
+				line-height: 26px;
+				color:black;
+			}
+		}
+	}
+}
+
+
+
+
+/****************************************************/
+/*Horizontal Rule*/
+.customHR{
+	margin-top:15px;
+	margin-bottom:15px;
+	border:1px solid black;
+}
+
+
+
+/****************************************************/
+/*Forms*/
+
+
+input{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-left:20px;
+	min-width:100%;
+		font-family: 'encode_sanslight';
+		font-size:18px;
+}
+
+textarea{
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-left:20px;
+}
+
+
+
+/****************************************************/
+/*Button*/
+
+
+button{
+	padding-top:25px;
+	padding-bottom:25px;
+	width:60%;
+	text-align:center;
+	border:none;
+	margin:25px;
+	font-size: 13px;
+	font-family: 'encode_sanslight';
+	text-transform: uppercase;
+	  -o-transition:.1s;
+	  -ms-transition:.1s;
+	  -moz-transition:.1s;
+	  -webkit-transition:.1s;
+	  transition:.1s;
+
+
+	/*Blue to White*/
+
+	&.blueToWhite { background-color: #2269f9; color:white; border:2px solid #2269f9;}
+	&.blueToWhite:hover{background-color: white; color: #2269f9; border:2px solid #2269f9;}
+
+	/*White to Blue*/
+
+	&.whiteToBlue { background-color: white; color: #2269f9; border:2px solid #2269f9;}
+	&.whiteToBlue:hover{ background-color: #2269f9; color:white; border:2px solid #2269f9;}
+
+
+	/*Green to White*/
+
+	&.greenToWhite { background-color: #08aa05; color: white; border: 2px solid #08aa05;}
+	&.greenToWhite:hover{ background-color: white; color: #08aa05; border: 2px solid #08aa05;}  
+
+	/*White to Green*/
+
+	&.whiteToGreen { background-color: white; color: #08aa05; border: 2px solid #08aa05;}
+	&.whiteToGreen:hover{ background-color: #08aa05; color: white; border: 2px solid #08aa05;}
+
+
+	/*White to Black*/
+
+	&.whiteToBlack { background-color: white; color: black; border:2px solid black;}
+	&.whiteToBlack:hover{background-color: black; color: white; border:2px solid black;}
+
+
+	/*Black to White*/
+
+
+	&.blackToWhite { background-color: black; color: white; border:2px solid black;}
+	&.blackToWhite:hover{  background-color: white; color: black; border:2px solid black;}
+
+
+	/*Grey to Black*/
+
+
+	&.greyToBlack { background-color: #f6f6f6; color: black; border:2px solid #f6f6f6;}
+	&.greyToBlack:hover{ background-color: black; color : white; border:2px solid black;}
+
+
+	/*Dark Grey to Black*/
+
+
+	&.darkGreyToBlack { background-color: #424242; color: white; border:2px solid black;}
+	&.darkGreyToBlack:hover{ background-color: black; color : white; border:2px solid black;}
+
+
+	/*Black to Grey*/
+
+
+	&.blackToGrey { background-color: black; color : white; border:2px solid black;}
+	&.blackToGrey:hover{ background-color: #f6f6f6; color: black; border:2px solid black;}
+
+
+	/*Dark Grey to Black -*/
+
+	&.darkGreyToBlack {background-color: #424242; color: white; border:2px solid black;}
+	&.darkGreyToBlack:hover{ background-color: black; color : white; border:2px solid black;}
+
+
+	/*Blue to Dark Blue-*/
+
+	&.blueToDarkBlue {background-color: #2269f9; color:white; border:2px solid #2269f9;}
+	&.blueToDarkBlue:hover{background-color: #1b59d7; color: white; border:2px solid #1b59d7;}
+
+
+	&.darkGreyToBlack {background-color: #424242; color: white; border:2px solid black;}
+	&.darkGreyToBlack:hover{ background-color: black; color : white; border:2px solid black;}
+
+
+	/*Blue to Dark Blue-  Specific to Alert Messages*/
+
+}
+
+
+
+
+
+/****************************************************/
+/*Radio*/
+
+input[type="radio"]{
+
+display:inline-block;
+width:30px;
+height:30px;
+vertical-align: middle;
+cursor: pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    font-size:18px;
+    padding:100px;
+}
+
+
+input[type="radio"]:checked{
+	background:#2269f9;
+}
+
+
+label{
+	font-family: 'encode_sansregular';
+	font-size: 18px;
+}
+
+
+
+/****************************************************/
+/*Checkbox*/
+
+
+input[type="checkbox"]{
+
+	padding-left:15px;
+
+
+}
+
+
+input[type="checkbox"]:checked{
+	background:#2269f9;
+
+
+
+}
+
+
+
+
+
+/****************************************************/
+/*Alerts*/
+
+.alertMessage{
+	width:100%;
+	margin:25px;
+	padding-top:25px;;
+-webkit-box-shadow: 3px 4px 22px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 3px 4px 22px 0px rgba(0,0,0,0.41);
+box-shadow: 3px 4px 22px 0px rgba(0,0,0,0.41);
+
+	.alertMessage-text{
+		text-align:center;
+		padding:15px;
+		color:black;
+		font-family: 'encode_sanslight';
+	}
+}
+
+.alertOptionContainer{
+
+	width:100%;
+
+	.blueToDarkBlue-Alert {
+
+		font-family: 'encode_sanslight';
+		text-transform: uppercase;
+		font-size:13px;
+		border:1px solid red;
+	  -o-transition:.1s;
+	  -ms-transition:.1s;
+	  -moz-transition:.1s;
+	  -webkit-transition:.1s;
+	  transition:.1s;
+		display:inline-block;
+		width:50%; 
+		background-color: #2269f9; 
+		color:white; 
+		border:2px solid #2269f9;
+		padding-top:25px;
+		padding-bottom:25px;
+		width:50%;
+		text-align:center;
+
+		img{
+			vertical-align: middle;
+		    height: auto;
+		    padding-right:10px;
+		    width: 37px;
+		}
+	}
+	.blueToDarkBlue-Alert:hover{
+		font-family: 'encode_sanslight';
+		text-transform: uppercase;
+		font-size:13px;
+		display:inline-block;
+		width:50%; 
+		background-color: #1b59d7; 
+		color:white; 
+		border:2px solid #1b59d7;
+		padding-top:25px;
+		padding-bottom:25px;
+		width:50%;
+		text-align:center;
+
+	}
+
+	.darkGreyToBlack-Alert {
+		font-family: 'encode_sanslight';
+		text-transform: uppercase;
+		font-size:13px;
+		display:inline-block;float:left;
+	  -o-transition:.1s;
+	  -ms-transition:.1s;
+	  -moz-transition:.1s;
+	  -webkit-transition:.1s;
+	  transition:.1s;
+		width:40%; 
+		background-color: #424242; 
+		color:white; 
+		border:2px solid #424242;
+		padding-top:25px;
+		padding-bottom:25px;
+		width:50%;
+		text-align:center;
+		img{
+			vertical-align: middle;
+		    height: auto;
+		    padding-right:10px;
+		    width: 37px;
+		}
+	}
+	.darkGreyToBlack-Alert:hover{
+		font-family: 'encode_sanslight';
+		text-transform: uppercase;
+		font-size:13px;
+		display:inline-block;
+		width:50%; 
+		background-color: black; 
+		color:white; 
+		border:2px solid black;
+		padding-top:25px;
+		padding-bottom:25px;
+		width:50%;
+		text-align:center;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************/
+/*Text*/
+/*This section uses custom classes for span tags*/
+
+.linkDemo{border-bottom: 4px solid #ade5ff;}
+
+.hoverDemo{background-color:#ade5ff;}
+
+.visitedDemo{color:black;border-bottom: 4px solid #206fdb;}
+
+.darkBackground{background-color:#333333; color:#bdbdbd;}
+
+.darkBackgroundLinkText{border-bottom:4px solid #bdbdbd; color:#bdbdbd;}
+
+.darkBackgroundLinkTextVisted{border-bottom:4px solid #ade5ff; color:#ade5ff;}
+
+.textarea{
+	font-family: 'encode_sanslight';
+	text-transform: uppercase;
+	font-size:13px;
+
+}
+.boolean{
+	font-family: 'encode_sanslight';
+	text-transform: uppercase;
+	font-size:13px;
+
+}
+
+.errorMessage-Parent{
+	font-size:28px;
+	color:#ff0066;
+	font-family: 'encode_sanslight';
+	font-size:36px;
+	line-height: 46px;
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+.errorMessage-Child{
+	line-height: 36px;
+	font-family: 'encode_sanssemibold';
+	font-size:18px;
+	color:#ff0066;
+}
+
+.validation-Parent{
+	font-size:28px;
+	color:#2ea200;
+	font-family: 'encode_sanslight';
+	font-size:36px;
+	line-height: 46px;
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+.validation-Child{
+	line-height: 36px;
+	font-family: 'encode_sanssemibold';
+	font-size:18px;
+	color:#2ea200;
+}
+
